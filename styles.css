@@ -17,16 +17,6 @@
     padding: 3%;
 }
 
-
-#blogpic {
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.blog-text {
-    text-align: center;
-}
-
-
 .mainblog, .main-shop, .main-contact {
     margin-left: 200px;
     padding: 1% 10px;
@@ -37,11 +27,39 @@
     padding: 1%;
 }
 
+/* CSS Relating directly to the Blog Section*/
+
+#blogpic {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blog-text {
+    text-align: center;
+     
+}
+.blog-text > h2 {
+    font-size: 3vh;
+    color: #bc6c25;
+}
+.mainblog {
+    background-color: #fefae0;
+}
+
+.blog-text > pre, p {
+    color: #606C38;
+    font-size: 1.5em;
+}
+
+/* CSS Relating to the shop */
+
 .main-shop {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-image: url(images/new-makeup-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .shop-item {
     display: flex;
@@ -51,14 +69,23 @@
     height: 400px;
     width: 250px;
     margin: 30px 15px;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.5;
     word-spacing: 1.5px;
     padding: 10px; 
     border: 1px black solid;
+    background-color: white;
 }
 
-
+.shop-item > button {
+    background-color: #ffe100e9;
+    padding: 5px;
+}
+/* .main-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 #contact-form {
     color: blue;
     background-color: blueviolet;
