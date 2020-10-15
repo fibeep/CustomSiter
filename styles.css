@@ -1,0 +1,35 @@
+.sidebar {
+    height: 100%;
+    width: 150px;
+    background-color: lightslategrey;
+    position: fixed;
+    padding: 1%;
+    margin: -1%;
+}
+
+.sidebar > * {
+    color: wheat;
+    font-weight: 300;
+    font-size: larger;
+}
+
+#blogpic {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-holder {
+    border: 2px black solid;
+    height: 200px;
+    width: 200px;
+}
+
+.mainblog {
+    margin-left: 200px;
+    padding: 0px 10px;
+    display: flex;
+}
+
+.image-holder, .blog-text {
+    padding: 1%;
+}
