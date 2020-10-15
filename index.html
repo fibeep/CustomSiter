@@ -6,22 +6,70 @@
     <body>
         <article id="blog">
             <div class="sidebar">
-                <p>Testing</p>
+                <label>Blog Customizations</label>
+                <label>Picture Style</label>
+                <select id="blog-pic-selector">
+                    <option id="nature-green" value="green-pic">Nature Green</option>
+                    <option id="icy-blue" value="blue-pic">Icy Blue</option>
+                    <option id="lava-red" value="red-pic">Lava Red</option>
+                </select>
+                <label>Header Font</label>
+                <select id="header-font">
+                    <option value="Arial">Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Courier">Courier</option>
+                    <option value="Geneva">Geneva</option>
+                    <option value="Monaco">Monaco</option>
+                </select>
+                <label>Header Color</label>
+                <input type="color" id="header-color">
+                <label>Text Font</label>
+                <select id="text-font">
+                    <option value="Arial">Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Courier">Courier</option>
+                    <option value="Geneva">Geneva</option>
+                    <option value="Monaco">Monaco</option>
+                </select>
+                <label>Text Color</label>
+                <input type="color" id="text-color">
+                
             </div>
             <div class="mainblog">
                 <div id="image-holder">
-                    <img src="images/green.jpeg" id="blogpic">
+                    <img src="images/green.jpeg" id="blogpic" height="500px" width="500px">
                 </div>
                 <div class="blog-text">
                     <h2>Lorem Ipsum Sumums</h2>
-                    <p>Lorem Ipsum Sumums Damus Tumusldkjsnalkjdnsakjldsajkdlsahdjkls</p>
+                    <p>Lorem Ipsum Sumums Damus Tumusldkjsnalkjdnsakjldsajkdlsahdjkls dljshalkjdhsakjhdlskajhdlksjdnmsadlnsamndlsandm,sn</p>
                 </div>
             </div>
         </article>
 
         <section id="shop">
             <div class="sidebar">
-                <p>Testing 2</p>
+                <label>Shop Customizations</label>
+                <label>Shop Type</label>
+                <select id="shop-type-select">
+                    <option id="makeup-shop" value="makeup">Makeup Store</option>
+                    <option id="car-shop" value="car">Car Shop</option>
+                    <option id="house-shop" value="house">Real Estate Shop</option>
+                </select>
+                <label>Button Style</label>
+                <select id="button-style">
+                    <option id="amazon-button" value="amazon">Amazon Button</option>
+                    <option id="ebay-button" value="ebay">Ebay Button</option>
+                </select>
+                <label>Rounded Buttons</label>
+                <input type="checkbox" id="rounded-button" value="rounded">
+                <label>Description Font</label>
+                <select id="shop-font">
+                    <option value="Arial">Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Courier">Courier</option>
+                    <option value="Geneva">Geneva</option>
+                    <option value="Monaco">Monaco</option>
+                </select>
             </div>
             <div class="main-shop">
                 <div class="shop-item">
@@ -40,6 +88,14 @@
                     </p>
                     <button>Compare Prices</button>
                 </div>
+                    <div class="shop-item">
+                        <img src="" class="shop-images">
+                        <p>
+                            You will always find the best prices in our store. If you find a store with similar or
+                            lower pricing, we will give you a 50% discount in your entire purchase!
+                        </p>
+                        <button>Compare Prices</button>
+                    </div>
                 
                 <div class="shop-item">
                     <img src="" class="shop-images">
@@ -51,9 +107,29 @@
             </div>
         </section>
         <section id="contact-us">
-            <div class="sidebar">Testing 3</div>
+            <div class="sidebar">
+                <label>Font Size</label>
+                <input type="number" id="form-text-size">
+                <label>Font Color</label>
+                <input type="color" id="form-text-color">
+                <label>Background Color</label>
+                <input type="color" id="form-bg-color">
+                <label>Border Size</label>
+                <input type="number" id="form-border-size">
+                <label>Border Color</label>
+                <input type="color" id="form-border-color">
+                <label>Border Type</label>
+                <select id="form-border-type">
+                    <option value="solid">Solid</option>
+                    <option value="dashed">Dashed</option>
+                    <option value="dotted">Dotted</option>
+                    <option value="double">Double</option>
+                    <option value="groove">Groove</option>
+                    <option value="ridge">Ridge</option>
+                </select>
+            </div>
             <div class="main-contact">
-                <form>
+                <form id="contact-form">
                     <label for="name">First Name:</label><br>
                     <input type="text" id="name"><br>
                     <label for="lname">Last Name:</label><br>
