@@ -24,7 +24,7 @@
     width: 200px;
 }
 
-.mainblog {
+.mainblog, .main-shop, .main-contact {
     margin-left: 200px;
     padding: 0px 10px;
     display: flex;
@@ -32,4 +32,25 @@
 
 .image-holder, .blog-text {
     padding: 1%;
+}
+
+.main-shop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    width: 250px;
+    margin: 30px 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    word-spacing: 1.5px;
+    padding: 10px; 
+    border: 1px black solid;
 }
