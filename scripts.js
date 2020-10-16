@@ -45,19 +45,35 @@ const shopType = document.querySelector("#shop-type-select")
 const buttonStyle = document.querySelector('#button-style')
 const roundedButton = document.querySelector("#rounded-button")
 const shopFont = document.querySelector("#shop-font")
-
+const shopButton = document.querySelectorAll(".shop-button")
 // Edits Shop Type
 
 // Edits Button Style
-
+buttonStyle.addEventListener('input', customButtonStyle)
+function customButtonStyle (){
+    if (buttonStyle.value == "amazon") {
+        for (i = 0; i < shopButton.length; i++) {
+            shopButton[i].style.backgroundColor = "#ffe100e9"
+            shopButton[i].style.color = "black"
+        }
+    }
+    else if (buttonStyle.value == "ebay") {
+        for (i = 0; i < shopButton.length; i++) {
+            shopButton[i].style.backgroundColor = "blue"
+            shopButton[i].style.color = "white"
+        }
+    }
+}
 // Option For Rounded Buttons
 
-// Edits Fonts - BROKEN NEEDS IMRPVEMENT
-// shopFont.addEventListener('input', editShopFont)
-// function editShopFont() {
-//     const newFont = shopFont.value
-//     shopItem.style.fontFamily = newFont
-// }
+// Edits Fonts
+shopFont.addEventListener('input', editShopFont)
+function editShopFont() {
+    for ( i = 0; i < shopItem.length; i++) {
+    const newFont = shopFont.value
+    shopItem[i].style.fontFamily = newFont 
+        }
+}
 
 // Shop Ends Here \\
 
