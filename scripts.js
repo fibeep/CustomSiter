@@ -11,7 +11,53 @@ const blogTextFont = document.querySelector("#text-font")
 const blogTextColor = document.querySelector("#text-color")
 
 // Modifies Blog Style
+blogStyle.addEventListener('input', modBlogStyle)
+function modBlogStyle(){
+    if (blogStyle.value == "wood-pic") {
+        blogPic.src = "images/green.jpeg"
+        blogHeader.innerHTML = "Rudyard Kipling, ‘The Way through the Woods’"
+        blogPoem.innerHTML = `They shut the road through the woods
+                    Seventy years ago.
+                    Weather and rain have undone it again,
+                    And now you would never know
+                    There was once a road through the woods
+                    Before they planted the trees.
+                    It is underneath the coppice and heath,
+                    And the thin anemones …`
+        blogPar.innerHTML = "This poem sees a road through the woods being rediscovered, and the old significance of it being unearthed. Kipling’s poem is laden with symbolism: does this woodland road suggest a link to our own past(and our childhood), or to a collective past, which can now barely be revisited? Part of the poem’s power lies in its ambiguity."
+        blog.style.backgroundColor = "#fefae0"
+        blogHeader.style.color = "#bc6c25"
+        blogPoem.style.color = "#606C38"
+        blogPar.style.color = "#606C38"
 
+    } else if (blogStyle.value == "blue-pic") {
+        blogPic.src = "images/blue.jpeg"
+        blogPoem.innerHTML = `...The placid waters hidden lies
+                                The first chill of an errant breeze
+                                I looked to the side rather than say please
+                                As the sculpted flakes saunter down
+                                Rest arrogantly on the parting geese's crown
+                                The lumbering crane takes to air I behold
+                                Portend the pervasive cold
+                                Easy an slow practiced rise ....`
+        blogHeader.innerHTML = "By The Lake Side...Romance On An Ice Block - Poem by saadat tahir"
+        blogPar.innerHTML = "The poem is extremley long, thus we have decided to only include a portion of it. If you wish to read it all please look it up on Google. On another note, we have yet to find a satisfiyng explanation for this poem. If you feel your interpretation is accurate, feel free to contact us below."
+        blog.style.backgroundColor = "#E2EDF6"
+        blogHeader.style.color = "#6f98a8"
+        blogPoem.style.color = "#91bbc9"
+        blogPar.style.color = "#91bbc9"
+    } else if (blogStyle.value == "red-pic") {
+        blogPic.src = "images/red.jpeg"
+        blogPoem.innerHTML = ""
+        blogHeader.innerHTML = 
+        blogPar.innerHTML = ""
+        blog.style.backgroundColor = ""
+        blogHeader.style.color = ""
+        blogPoem.style.color = ""
+        blogPar.style.color = ""
+    }
+
+}
 // Modifies header font
 blogHeadFont.addEventListener('input', blogHeaderFont)
 function blogHeaderFont() {
