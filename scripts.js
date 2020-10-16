@@ -38,6 +38,8 @@ function newBlogTextColor(){
     blogPar.style.color = newColor
     blogPoem.style.color = newColor
 }
+// Blog Ends Here \\
+
 // This code modifies the Shop \\
 const shop = document.querySelector("#main-shop")
 const shopItem = document.querySelectorAll(".shop-item")
@@ -65,7 +67,20 @@ function customButtonStyle (){
     }
 }
 // Option For Rounded Buttons
+roundedButton.addEventListener('input', makeButtonRound)
+function makeButtonRound() {
+    if (roundedButton.value == "rounded"){
+        for ( i = 0; i < shopButton.length; i++){
+            shopButton[i].style.borderRadius = "25px"
+        }
+    }
+    else {
+        for (i = 0; i < shopButton.length; i++) {
+            shopButton[i].style.borderRadius = "0px"
+        }  
+    }
 
+}
 // Edits Fonts
 shopFont.addEventListener('input', editShopFont)
 function editShopFont() {
