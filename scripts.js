@@ -48,13 +48,21 @@ function modBlogStyle(){
         blogPar.style.color = "#91bbc9"
     } else if (blogStyle.value == "red-pic") {
         blogPic.src = "images/red.jpeg"
-        blogPoem.innerHTML = ""
-        blogHeader.innerHTML = 
-        blogPar.innerHTML = ""
-        blog.style.backgroundColor = ""
-        blogHeader.style.color = ""
-        blogPoem.style.color = ""
-        blogPar.style.color = ""
+        blogPoem.innerHTML = `is pouring in a slow sea piled high
+                                cuddling the houses
+                                in a red-black burning embrace.
+
+                                Its fingers flow through windows and doors
+                                (it never knocks)
+                                to touch the soft lives,
+                                laughably soft – within.`
+        blogHeader.innerHTML = `Lava
+        by Tim Kindberg`
+        blogPar.innerHTML = "The poem is extremley long, thus we have decided to only include a portion of it. If you wish to read it all please look it up on Google. On another note, we have yet to find a satisfiyng explanation for this poem. If you feel your interpretation is accurate, feel free to contact us below."
+        blog.style.backgroundColor = "#60495a"
+        blogHeader.style.color = "f24236"
+        blogPoem.style.color = "#d00000"
+        blogPar.style.color = "#d00000"
     }
 
 }
