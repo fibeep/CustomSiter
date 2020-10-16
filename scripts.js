@@ -110,7 +110,7 @@ const p1 = document.querySelector('#p1')
 const p2 = document.querySelector('#p2')
 const p3 = document.querySelector('#p3')
 const p4 = document.querySelector('#p4')
-const shopBgImg = document.querySelector('.mainshop')
+const shopBgImg = document.querySelector('.main-shop')
 
 // Edits Shop Type
 shopType.addEventListener('input', storeStyle)
@@ -129,7 +129,7 @@ function storeStyle() {
                             want it, just buy it!`
         p4.innerHTML = `One lipstick... Many lipsticks... Do we really have to say anything else?`
     } else if (shopType.value == "car") {
-        shopBgImg.style.backgroundImage = "url(images/carbg.jpeg)"
+        shopBgImg.style.backgroundImage = "url(images/newcarbg.jpeg)"
         img1.src = "images/s2000.jpg"
         img2.src = "images/raptor.jpg"
         img3.src = "images/corvette.jpg"
@@ -139,6 +139,7 @@ function storeStyle() {
         p3.innerHTML = "More of a classic person yourself? Enjoy this classic Corvette from 1962, a guaranteed conversation piece."
         p4.innerHTML = "Feelin' like a baller? Purchase this brand new 2021 Ferrari. For the low price of $1.5 Million USD you can become the coolest person in the block."
     } else if (shopType.value == "house") {
+        shopBgImg.style.backgroundImage = "url(images/housebg.jpg)"
         img1.src = "images/classic.jpeg"
         img2.src = "images/modern.jpg"
         img3.src = "images/mansion.jpeg"
