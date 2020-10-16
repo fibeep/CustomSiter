@@ -60,7 +60,7 @@ function modBlogStyle(){
         by Tim Kindberg`
         blogPar.innerHTML = "The poem is extremley long, thus we have decided to only include a portion of it. If you wish to read it all please look it up on Google. On another note, we have yet to find a satisfiyng explanation for this poem. If you feel your interpretation is accurate, feel free to contact us below."
         blog.style.backgroundColor = "#60495a"
-        blogHeader.style.color = "f24236"
+        blogHeader.style.color = "#f24236"
         blogPoem.style.color = "#d00000"
         blogPar.style.color = "#d00000"
     }
@@ -102,6 +102,15 @@ const buttonStyle = document.querySelector('#button-style')
 const roundedButton = document.querySelector("#rounded-button")
 const shopFont = document.querySelector("#shop-font")
 const shopButton = document.querySelectorAll(".shop-button")
+const img1 = document.querySelector('#img1')
+const img2 = document.querySelector('#img2')
+const img3 = document.querySelector('#img3')
+const img4 = document.querySelector('#img4')
+const p1 = document.querySelector('#p1')
+const p2 = document.querySelector('#p2')
+const p3 = document.querySelector('#p3')
+const p4 = document.querySelector('#p4')
+
 // Edits Shop Type
 
 // Edits Button Style
