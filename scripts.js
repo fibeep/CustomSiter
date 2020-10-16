@@ -112,6 +112,40 @@ const p3 = document.querySelector('#p3')
 const p4 = document.querySelector('#p4')
 
 // Edits Shop Type
+shopType.addEventListener('input', storeStyle)
+function storeStyle() {
+    if (shopType.value == "makeup") {
+        img1.src = "images/blush.jpeg"
+        img2.src = "images/multiple-blush.jpg"
+        img3.src = "images/lipstick.jpeg"
+        img4.src = "images/multiple-lip.jpeg"
+        p1.innerHTML = `Our new blush, specially made for you! Purchase one now and recieve another one for free! 
+                        Trust us, you'll need the other one when your friends try to steal yours.`
+        p2.innerHTML = `After seeing the success with our new blush, we decided to make a blush kit. With this kit
+                        you're face will become unrecognizable!`
+        p3.innerHTML = `You've tried our blush, now you should try our lipstick. We know you want it, you know you
+                            want it, just buy it!`
+        p4.innerHTML = `One lipstick... Many lipsticks... Do we really have to say anything else?`
+    } else if (shopType.value == "car") {
+        img1.src = "images/s2000.jpg"
+        img2.src = "images/raptor.jpg"
+        img3.src = "images/corvette.jpg"
+        img4.src = "images/ferrari.jpg"
+        p1.innerHTML = "The affordable, soon to be classic convertible. Enjoy the car that held the record for most horsepower per cubic centimeter while you can still buy it!"
+        p2.innerHTML = "Feeling the need to drive a monster truck but can't find where to par it? Try out the new raptor, your garage friendly monster truck."
+        p3.innerHTML = "More of a classic person yourself? Enjoy this classic Corvette from 1962, a guaranteed conversation piece."
+        p4.innerHTML = "Feelin' like a baller? Purchase this brand new 2021 Ferrari. For the low price of $1.5 Million USD you can become the coolest person in the block."
+    } else if (shopType.value == "house") {
+        img1.src = ""
+        img2.src = ""
+        img3.src = ""
+        img4.src = ""
+        p1.innerHTML = ""
+        p2.innerHTML = ""
+        p3.innerHTML = ""
+        p4.innerHTML = ""
+    }
+}
 
 // Edits Button Style
 buttonStyle.addEventListener('input', customButtonStyle)
@@ -163,7 +197,7 @@ const formFontColor = document.querySelector("#form-text-color")
 const formBgColor = document.querySelector("#form-bg-color")
 const formBorderSize = document.querySelector("#form-border-size")
 const formBorderColor = document.querySelector("#form-border-color")
-const formBorderType = document.querySelector("#form-border-color")
+const formBorderType = document.querySelector("#form-border-type")
 
 // Edits font size
 formFontSize.addEventListener('input', editFormFont)
@@ -187,16 +221,18 @@ function editFormBg() {
 }
 
 // Edits Border Size ---> Needs improvement
-// formBorderSize.addEventListener('input', editBorder)
-// function editBorder() {
-//     const newBorder = formBorderSize.value + 'px'
-//     form.style.borderWidth = newBorder
+formBorderSize.addEventListener('input', editBorder)
+formBorderType.addEventListener('input', editBorder)
+formBorderColor.addEventListener('input', addEventListener)
+function editBorder() {
+    const newBorder = formBorderSize.value + 'px'
+    form.style.borderWidth = newBorder
     
-//     const newColor = formBorderColor.value
-//     form.style.borderColor = newColor
+    const newColor = formBorderColor.value
+    form.style.borderColor = newColor
 
-//     const newStyle  = formBorderType.value
-//     form.style.borderStyle = newStyle
-// }
+    const newStyle  = formBorderType.value
+    form.style.borderStyle = newStyle
+}
 
 // Shop Customizations End Here \\
