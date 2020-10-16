@@ -110,11 +110,13 @@ const p1 = document.querySelector('#p1')
 const p2 = document.querySelector('#p2')
 const p3 = document.querySelector('#p3')
 const p4 = document.querySelector('#p4')
+const shopBgImg = document.querySelector('.mainshop')
 
 // Edits Shop Type
 shopType.addEventListener('input', storeStyle)
 function storeStyle() {
     if (shopType.value == "makeup") {
+        shopBgImg.style.backgroundImage = "url(images/new-makeup-bg.jpg)"
         img1.src = "images/blush.jpeg"
         img2.src = "images/multiple-blush.jpg"
         img3.src = "images/lipstick.jpeg"
@@ -127,6 +129,7 @@ function storeStyle() {
                             want it, just buy it!`
         p4.innerHTML = `One lipstick... Many lipsticks... Do we really have to say anything else?`
     } else if (shopType.value == "car") {
+        shopBgImg.style.backgroundImage = "url(images/carbg.jpeg)"
         img1.src = "images/s2000.jpg"
         img2.src = "images/raptor.jpg"
         img3.src = "images/corvette.jpg"
@@ -136,14 +139,14 @@ function storeStyle() {
         p3.innerHTML = "More of a classic person yourself? Enjoy this classic Corvette from 1962, a guaranteed conversation piece."
         p4.innerHTML = "Feelin' like a baller? Purchase this brand new 2021 Ferrari. For the low price of $1.5 Million USD you can become the coolest person in the block."
     } else if (shopType.value == "house") {
-        img1.src = ""
-        img2.src = ""
-        img3.src = ""
-        img4.src = ""
-        p1.innerHTML = ""
-        p2.innerHTML = ""
-        p3.innerHTML = ""
-        p4.innerHTML = ""
+        img1.src = "images/classic.jpeg"
+        img2.src = "images/modern.jpg"
+        img3.src = "images/mansion.jpeg"
+        img4.src = "images/castle.jpg"
+        p1.innerHTML = "Are you ready to level up? This nice classic house could be yours in just a few more weeks."
+        p2.innerHTML = "Want to move out of your boring house into a new, classic one? You are a tech startup CEO after all. Think about it, this could be yours."
+        p3.innerHTML = "Bored of big houses? Feel like you and your family can't quite fit? Worry not, with this mansion, even your pets will have their own room."
+        p4.innerHTML = "Want to host a party and have every single guest sleep over? When you own this castle, you will never have to worry about 'space' again in your life."
     }
 }
 
@@ -220,7 +223,7 @@ function editFormBg() {
     form.style.backgroundColor = newBg
 }
 
-// Edits Border Size ---> Needs improvement
+// Edits Border Size 
 formBorderSize.addEventListener('input', editBorder)
 formBorderType.addEventListener('input', editBorder)
 formBorderColor.addEventListener('input', addEventListener)
