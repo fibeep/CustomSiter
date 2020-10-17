@@ -129,7 +129,7 @@ function storeStyle() {
                             want it, just buy it!`
         p4.innerHTML = `One lipstick... Many lipsticks... Do we really have to say anything else?`
     } else if (shopType.value == "car") {
-        shopBgImg.style.backgroundImage = "url(images/newcarbg.jpeg)"
+        shopBgImg.style.backgroundImage = "url(images/newcarbg.jpg)"
         img1.src = "images/s2000.jpg"
         img2.src = "images/raptor.jpg"
         img3.src = "images/corvette.jpg"
@@ -227,7 +227,7 @@ function editFormBg() {
 // Edits Border Size 
 formBorderSize.addEventListener('input', editBorder)
 formBorderType.addEventListener('input', editBorder)
-formBorderColor.addEventListener('input', addEventListener)
+formBorderColor.addEventListener('input', editBorder)
 function editBorder() {
     const newBorder = formBorderSize.value + 'px'
     form.style.borderWidth = newBorder
