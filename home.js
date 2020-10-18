@@ -60,3 +60,35 @@ function parColor(){
 }
 
 // Home Picture Section Ends Here \\
+
+// Edit Instruction Section \\
+
+const h2FontFam = document.querySelector('#h2-font-fam')
+const h2FontColor = document.querySelector('#h2-font-color')
+const h2FontSize = document.querySelector('#h2-font-size')
+const ulFontFam = document.querySelector('#ul-font-fam')
+const ulFontColor = document.querySelector('#ul-font-color')
+const ulFontSize = document.querySelector('#ul-font-size')
+const ulImageSelect = document.querySelector('#ul-select')
+const ulPadding = document.querySelector('#ul-padding')
+const ulMargin = document.querySelector('#ul-margin')
+
+const h2Title = document.querySelector('.main-title')
+const unorderedList = document.querySelector('#list')
+
+// Change H2 - Color, Font Family
+h2FontFam.addEventListener('input', editH2)
+h2FontColor.addEventListener('input', editH2)
+function editH2() {
+    const newFont = h2FontFam.value
+    h2Title.style.fontFamily = newFont
+    const color = h2FontColor.value
+    h2Title.style.color = color
+}
+// Change H2 Font Size
+h2FontSize.addEventListener('input', sizeH2)
+function sizeH2(){
+    const newSize = h2FontSize.value + "px"
+    h2Title.style.fontSize = newSize
+    console.log(newSize)
+}
