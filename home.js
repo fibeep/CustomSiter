@@ -16,3 +16,47 @@ function bgImg () {
     const newBack = homeBgImg.value
     homeImg.style.backgroundImage = "url(" + newBack + ")"
 }
+
+// Change Font of H1
+homeH1Font.addEventListener('input', homeHFont)
+function homeHFont() {
+    const newFont = homeH1Font.value
+    homeH1.style.fontFamily = newFont
+}
+
+// Change Color of H1
+
+homeH1Color.addEventListener('input', homeHColor)
+function homeHColor () {
+    const color = homeH1Color.value
+    homeH1.style.color = color
+}
+
+// Edit Text Displayed
+homePText.addEventListener('input', PEdit)
+function PEdit () {
+    homeP.innerHTML = homePText.value
+}
+
+// Edit Letter Spacing
+homePSpacing.addEventListener('input', letterSpacing)
+function letterSpacing () {
+    const space = homePSpacing.value
+    homeP.style.letterSpacing = space + 'px'
+}
+
+//Edit Paragraph font
+homePFont.addEventListener('input', PFontChange)
+function PFontChange() {
+    const newFont = homePFont.value
+    homeP.style.fontFamily = newFont
+}
+
+// Edit Paragraph Color
+homePColor.addEventListener('input', parColor)
+function parColor(){
+    newColor = homePColor.value
+    homeP.style.color = newColor
+}
+
+// Home Picture Section Ends Here \\
