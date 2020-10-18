@@ -1,4 +1,22 @@
 /* General Styling of the Pages */
+.home-sidebar {
+    height: 100%;
+    width: 150px;
+    background-color: rgb(19, 100, 181);
+    position: absolute;
+    padding: 1%;
+    margin: -0.1% -1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-sidebar > * {
+    color: white;
+    font-weight: 300;
+    font-size: larger;
+    margin: 3%;
+    padding: 3%;
+}
 
 .sidebar {
     height: 75%;
@@ -19,7 +37,7 @@
     padding: 3%;
 }
 
-.mainblog, .main-shop, .main-contact {
+.mainblog, .main-shop, .main-contact, .home-main-img-text,.home-instructions {
     margin-left: 160px;
     padding: 1% 10px;
     display: flex;
@@ -28,7 +46,7 @@
 /* Home Header */
 
 #home-head {
-    background-color: teal;
+    background-color: rgb(28, 164, 164);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +59,34 @@
     font-size: 5vh;
 }
 
+/* Home Image Section */
+.home-main-img-text {
+    background-image: url('images/homebg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.home-main-img-text > * {
+    padding-left: 10%;
+}
+
+/* Home Instruction Section */
+.home-instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.home-instructions > * {
+    padding-left: 10%;
+}
 /* CSS Relating directly to the Blog Section*/
 
 .image-holder, .blog-text {
