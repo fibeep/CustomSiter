@@ -18,6 +18,11 @@
     padding: 3%;
 }
 
+.home-sidebar > input {
+    color: black;
+}
+
+
 .sidebar {
     height: 75%;
     width: 150px;
@@ -72,6 +77,7 @@
     align-items: left;
 }
 
+
 .home-main-img-text > * {
     padding-left: 10%;
 }
@@ -86,6 +92,10 @@
 
 .home-instructions > * {
     padding-left: 10%;
+}
+
+#ul-select {
+    color: black;
 }
 /* CSS Relating directly to the Blog Section*/
 
