@@ -75,6 +75,7 @@ const ulMargin = document.querySelector('#ul-margin')
 
 const h2Title = document.querySelector('.main-title')
 const unorderedList = document.querySelector('#list')
+const listItems = document.querySelectorAll('.li')
 
 // Change H2 - Color, Font Family
 h2FontFam.addEventListener('input', editH2)
@@ -85,10 +86,33 @@ function editH2() {
     const color = h2FontColor.value
     h2Title.style.color = color
 }
+
 // Change H2 Font Size
 h2FontSize.addEventListener('input', sizeH2)
 function sizeH2(){
     const newSize = h2FontSize.value + "px"
     h2Title.style.fontSize = newSize
-    console.log(newSize)
 }
+
+// Change UL Font Color
+ulFontColor.addEventListener('input', editUl)
+function editUl(){
+    const newColor = ulFontColor.value
+    unorderedList.style.color = newColor
+}
+
+// Change UL Font Size
+ulFontSize.addEventListener('input', ulSize)
+function ulSize () {
+    const newSize = ulFontSize.value + 'px'
+    for (i=0;i < listItems.length; i++) {
+    listItems[i].style.fontSize = newSize }
+}
+
+// Change UL Font Family
+ulFontFam.addEventListener('input', ulFam)
+function ulFam () {
+   const fontFam = ulFontFam.value 
+    for (i = 0; i < listItems.length; i++) {
+        listItems[i].style.fontFamily = fontFam}
+} 
