@@ -116,3 +116,23 @@ function ulFam () {
     for (i = 0; i < listItems.length; i++) {
         listItems[i].style.fontFamily = fontFam}
 } 
+
+// Changes LI icons
+ulImageSelect.addEventListener('input', changeImg)
+function changeImg () {
+    if (ulImageSelect.value == "star") {
+        for (i = 0; i < listItems.length; i++) {
+            listItems[i].style.listStyleImage = 'url(images/star.png)'
+        }
+    }
+    else if (ulImageSelect.value == "check") {
+        for (i = 0; i < listItems.length; i++) {
+            listItems[i].style.listStyleImage = 'url(images/check.png)'
+        }
+    }
+    else if (ulImageSelect.value == "x"){
+        for (i = 0; i < listItems.length; i++) {
+            listItems[i].style.listStyleImage = 'url(images/x.png)'
+        }
+    }
+}
