@@ -77,6 +77,8 @@ const h2Title = document.querySelector('.main-title')
 const unorderedList = document.querySelector('#list')
 const listItems = document.querySelectorAll('.li')
 
+const section = document.querySelector('.home-instructions')
+
 // Change H2 - Color, Font Family
 h2FontFam.addEventListener('input', editH2)
 h2FontColor.addEventListener('input', editH2)
@@ -135,4 +137,14 @@ function changeImg () {
             listItems[i].style.listStyleImage = 'url(images/x.png)'
         }
     }
+}
+
+// Edit Margin and Padding
+ulPadding.addEventListener('input', editVisual)
+ulMargin.addEventListener('input', editVisual)
+function editVisual() {
+    const pad = ulPadding.value + 'px'
+    const margin = ulMargin.value + 'px'
+    section.style.margin = margin
+    section.style.padding = pad
 }
