@@ -12,4 +12,4 @@
   2) Open the home.html file first, **NOT** the index.html file.
   3) Follow along the instructions and play around with the settings to your preference.
 
-!(https://github.com/fibeep/CustomSiter/blob/master/Screen%20Shot%202020-10-18%20at%209.36.03%20PM.png?raw=true )
+![Product Image](https://github.com/fibeep/CustomSiter/blob/master/Screen%20Shot%202020-10-18%20at%209.36.03%20PM.png?raw=true )
